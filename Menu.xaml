@@ -1,0 +1,30 @@
+﻿<Window x:Class="projet_gite.Menu"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:projet_gite"
+        mc:Ignorable="d"
+        Title="Menu" Height="800" Width="1000" Closing="Window_Closing">
+    <Grid Grid.IsSharedSizeScope="True" Opacity="0.9">
+        <Grid.Background>
+            <ImageBrush ImageSource="chalet-glacon2.jpg"/>
+        </Grid.Background>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="232*"/>
+            <RowDefinition Height="537*"/>
+        </Grid.RowDefinitions>
+
+
+
+        <Button Content="Creer une reservation" FontWeight="Bold" FontSize="18" HorizontalAlignment="Left" VerticalAlignment="Top" Width="234" Margin="50,10,0,0" Click="Button_Click" Height="86" Opacity="0.5" Grid.Row="1" RenderTransformOrigin="0.893,0.548"/>
+        <Button Content="Modifier une reservation" FontWeight="Bold" FontSize="18" HorizontalAlignment="Left" VerticalAlignment="Top" Width="234" Margin="50,191,0,0" Click="Button_Click_1" Height="90" Grid.Row="1" Opacity="0.48"/>
+        <Button Content="Reservations en cours" FontSize="18" FontWeight="Bold" HorizontalAlignment="Left" Margin="50,389,0,0" VerticalAlignment="Top" Width="234" Height="78" Click="Button_Click_2" Grid.Row="1" Opacity="0.5"/>
+        <Button Content="Log Out" Background="BlanchedAlmond" HorizontalAlignment="Right" VerticalAlignment="Top" Width="75" Margin="893,10,0,0" Click="Button_Click_4" Grid.IsSharedSizeScope="True" HorizontalContentAlignment="Center"/>
+        <ListBox Name="listResa" HorizontalAlignment="Left" Height="449" VerticalAlignment="Top" Width="333" Margin="631,18,0,0" Opacity="0.6" SelectionChanged="ListBox_SelectionChanged" Grid.Row="1"/>
+        <Label Content="Reservations en cours" FontSize="25" FontWeight="Bold" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="664,207,0,0" Foreground="#FFACACAC" Grid.RowSpan="2" Width="300"/>
+
+
+
+    </Grid>
+</Window>
